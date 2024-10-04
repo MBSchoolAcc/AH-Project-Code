@@ -1,0 +1,13 @@
+import random as ran
+
+def getAllItems():
+  allItems = []
+  return allItems
+
+def getRandomItem():
+  return getAllItems()[ran.randint(0, len(getAllItems()) - 1)]
+
+def getChoice(numChoices):
+  choice = int(input())
+  while choice < 1 or choice > numChoices:
+    choice = int(input())
